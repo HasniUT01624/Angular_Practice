@@ -1,1 +1,8 @@
-<app-header></app-header>
+<!-- <app-header></app-header> -->
+
+
+<input type="text"[(ngModel)]="title">
+<p [innerHTML]="body | highlightPipe:[title]"></p>
+
+
+<input type="text" appAlphabetOnly>
